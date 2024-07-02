@@ -27,31 +27,6 @@
       // You can also add any other logic you want to execute when the image is clicked
     });
   });
-
-  function complete_load() {
-    if (domain.indexOf("wcphkust.github.io") >= 0) {
-        var edit = document.getElementById('edit');
-        if (edit) {
-            edit.style.display = 'none';
-        }
-
-        if (footer) {
-            let tracker_image = document.getElementById('tracker-img')
-            tracker_image.src = '//clustrmaps.com/map_v2.png?cl=ffffff&w=300&t=n&d=8EaDWYvWxhC8ao_2kxQYgcaxT3KuYmLR3SAGmGeS5lQ'
-        }
-    }
-    if (domain.indexOf("chengpeng-wang.github.io") >= 0) {
-        var edit = document.getElementById('edit');
-        if (edit) {
-            edit.style.display = 'none';
-        }
-
-        if (footer) {
-            let tracker_image = document.getElementById('tracker-img')
-            tracker_image.src = '//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=78uADWp0CaFJ0TxBreXCXgKwMgBUrX69maHTEgtH2ks'
-        }
-    }
-  }
 </script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
 
@@ -282,8 +257,8 @@ Long-term mentor of <a href="https://www.sigplan.org/LongTermMentoring/">SIGPLAN
 
 
 <div class="content-center">  
-    <font color="black" size="3.5pt">Last modified: 2024.07.</font>
-    <img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=78uADWp0CaFJ0TxBreXCXgKwMgBUrX69maHTEgtH2ks id='tracker-img'/>
+    <font color="black" size="3.5pt">Last modified: 2024.07.</font>  
+    <img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=78uADWp0CaFJ0TxBreXCXgKwMgBUrX69maHTEgtH2ks" id='tracker-img'/>
     <style onload="complete_load()"></style>
 </div>
 
