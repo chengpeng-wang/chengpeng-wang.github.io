@@ -1,0 +1,396 @@
+\documentclass[centered]{resume}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[letterpaper,margin=0.6in]{geometry}
+\usepackage{etaremune}
+\usepackage{enumitem,kantlipsum}
+\usepackage{mathpazo}
+\usepackage[symbol]{footmisc}
+\usepackage{fontawesome}
+\usepackage{marvosym}
+\usepackage{hyperref}
+\usepackage{datetime}
+\usepackage{multicol}
+\usepackage{ifthen}
+
+\setlength{\hoffset}{0pt}
+\setlength{\voffset}{0pt}
+\pagestyle{empty}
+
+\hypersetup{
+    colorlinks=true,
+    allcolors=[cmyk]{0.5,1,0,0} 
+}
+
+% % Margins
+% \topmargin=-0.3in
+% \textheight=9.6in
+% \oddsidemargin=-0.5in
+% \textwidth=7in
+% \let\raggedleft\raggedright
+
+\newdateformat{mydateformat}{\shortmonthname[\THEMONTH] \THEDAY, \THEYEAR}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% Topic Selection
+% \newcommand{\topic}{Cybersecurity}
+% \newcommand{\topic}{Software and System Security}
+\newcommand{\topic}{Software Engineering}
+% \newcommand{\topic}{Software Security}
+
+
+% References Selection
+\newboolean{usesuresh}
+\newboolean{useberkay}
+\newboolean{usemulticol}
+
+\setboolean{usesuresh}{true}
+\setboolean{useberkay}{true}
+\ifthenelse{\boolean{usesuresh} \and \boolean{useberkay}}{
+    \setboolean{usemulticol}{true}
+}{
+    \setboolean{usemulticol}{false}
+}
+
+% FOR ANY PARTICULAR PURPOSE.
+
+\newenvironment{rSection}[1]{%
+  \sectionskip
+  {\bfseries \MakeUppercase{#1}}\vspace{0.8em}%
+  \noindent\hrule width \linewidth\vspace{-0.5em}\par
+}{\vspace{0.5em}}
+
+
+\begin{document}
+
+\usefont{T1}{lmr}{m}{n}
+
+\name{\LARGE \sc{Chengpeng Wang}}
+
+\vspace{1mm}
+
+\address{{Assistant Professor, National University of Singapore}}
+
+\address{
+    \href{mailto:wang-chengpeng@nus.edu.sg}{{\textcolor{black}{\raisebox{-0ex}{\faEnvelopeO}\ wang-chengpeng@nus.edu.sg}}}
+    \>$\cdot$\>
+    \href{https://chengpeng-wang.github.io/}{{\textcolor{black}{\raisebox{-0.1ex}{ \faGlobe}\ Homepage}}}
+    \>$\cdot$\>
+    \href{https://github.com/chengpeng-wang}{{\small\textcolor{black}{\raisebox{-0.1ex}{\normalsize \faGithub}\ Chengpeng Wang}}}
+}
+
+\address{{COM1 \#03-20, 13 Computing Drive, Singapore 117417}}
+
+\begin{resume}
+
+% \begin{rSection}{Address}
+% COM1 \#03-20, 13 Computing Drive, Singapore 117417
+% \end{rSection}
+
+\vspace{1mm}
+
+\begin{rSection}{Research Interest}
+Software Engineering, Programming Languages, and Machine Learning, with a focus on developing program analysis techniques that enhance the reliability and performance of modern software systems, with particular interests in AI-assisted software development and AI agents.
+\end{rSection}
+
+\begin{rSection}{Education}
+\textbf{Hong Kong University of Science and Technology} \hfill {\em Aug 2019 - Dec 2023} 
+\\ Ph.D. in Computer Science and Engineering
+
+\vspace{-1mm}
+
+{\bf Tsinghua University} \hfill {\em Aug 2016 - Jul 2019} 
+\\ M.S. in Software Engineering \hfill
+
+\vspace{-1mm}
+
+{\bf Tsinghua University} \hfill {\em Aug 2012 - Jul 2016} 
+\\ B.S. in Software Engineering, Minor in Math \hfill
+
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{ACADEMIC AND INDUSTRY APPOINTMENTS}
+\begin{tabular}{r|p{13cm}}
+
+ \textsc{Now} & \textbf{Assistant Professor, National University of Singapore, Singapore}\\\textsc{June 2026}  &\normalsize School of Computing\multicolumn{4}{c}{}\\
+
+ \textsc{May 2026} & \textbf{Postdoctoral Fellow, Purdue University, West Lafayette, IN, USA}\\\textsc{Mar 2024}  &\normalsize Neuro-symbolic code auditing, working with Prof. Xiangyu Zhang\multicolumn{4}{c}{}\\
+
+ %\textsc{Feb 2024} & \textbf{Research Intern at Ant Group, Shenzhen}\\\textsc{Dec 2023}  &\normalsize \textsc{Task}: Large language model-aided static analysis\multicolumn{4}{c}{}\\
+
+ \textsc{July 2023} & \textbf{Research Intern at Veridise, Remote}\\\textsc{May 2023}  &\normalsize Static bug detection of zero-knowledge proof circuits\multicolumn{4}{c}{}\\
+
+
+ \textsc{Aug 2022} & \textbf{Research Intern at Ant Group, Shenzhen, China}\\\textsc{Feb 2021}  &\normalsize Performance optimization of database-backed application\multicolumn{4}{c}{}\\
+
+ \textsc{Aug 2019} & \textbf{Research Intern at Sourcebrella, Shenzhen, China}\\\textsc{Feb 2019} &\normalsize Inconsistency detection of build systems\multicolumn{4}{c}{}\\
+\end{tabular}
+\end{rSection}
+
+\begin{rSection}{Honors and Awards}
+{ASE Distinguished Reviewer Award, ACM SIGSOFT} \hfill {\em 2025}\\
+{NeurIPS Spotlight Paper, NeurIPS} \hfill {\em 2025}\\
+{Postdoc Travel Award, Purdue University} \hfill {\em 2024}\\
+{ACM SIGARCH Best Paper Award, ASPLOS} \hfill {\em 2024} \\
+{UGC Research Travel Grant, HKUST} \hfill {\em 2022, 2023}\\
+{Ant Group Outstanding Collaboration Award} \hfill {\em 2023}\\
+{ACM SIGPLAN Distinguished Paper Award, OOPSLA} \hfill {\em 2022} \\
+\end{rSection}
+
+\begin{rSection}{Grants}
+PI. ``\textit{Synthesizing Realistic Benchmarks for LLM-Aided Code Auditing}''. Researcher Access Program, funded by \textbf{OpenAI}.
+
+Co-Advisor, with Xiangyu Zhang (PI). ``\textit{Amazon Trusted AI Challenge: An Agentic Red Teaming Framework for Code LLMs}''. Funded by \textbf{Amazon} (acceptance rate: 11\%, 10/90).
+\end{rSection}
+
+\begin{rSection}{Publications}
+
+\begin{subsection*}{\textbf{JOURNAL PUBLICATIONS}}{}{}{}
+\vspace{-1.5mm}
+
+[J1] Chao Wang, Li Lin, \textbf{Chengpeng Wang}, Jiafeng Huang, Congxia Wu, and Rongxin Wu,
+ReachCheck: Compositional Library-Aware Call Graph Reachability Analysis in the IDEs, In \textbf{TOSEM 2025}: Transactions on Software Engineering and Methodology
+
+[J2] Hao Ling, Heqing Huang, \textbf{Chengpeng Wang}, Yuandao Cai, and Charles Zhang, GiantSan: Efficient Operation-Level Memory Sanitization with Segment Folding, In \textbf{TOCS 2024}: The ACM Transactions on Computer Systems. (Invited extension of [C16])
+
+[J3] Rongxin Wu, Zhiling Huang, Zige Tian, \textbf{Chengpeng Wang}, and Xiangyu Zhang, PackHunter: Recovering Missing Packages for C/C++ Projects, In \textbf{TSE 2024}: Transactions on Software Engineering
+
+[J4] Yi Sun, \textbf{Chengpeng Wang}, Gang Fan, Qingkai Shi, and Xiangyu Zhang, Fast and Precise Static Null Exception Analysis with Synergistic Preprocessing, In \textbf{TSE 2024}: Transactions on Software Engineering
+
+[J5] Wensheng Tang, Dejun Dong, Shijie Li, \textbf{Chengpeng Wang}, Peisen Yao, Jinguo Zhou, and Charles Zhang, Octopus: Scaling Value-Flow Analysis via Parallel Collection of Realizable Path Conditions, In \textbf{TOSEM 2023}: Transactions on Software Engineering and Methodology
+
+[J6] \textbf{Chengpeng Wang}, Wenyang Wang, Peisen Yao, Qingkai Shi, Jinguo Zhou, Xiao Xiao, and and Charles Zhang, Anchor: Fast and Precise Value-Flow Analysis for Containers via Memory Orientation, In \textbf{TOSEM 2022}: Transactions on Software Engineering and Methodology
+
+\end{subsection*}
+
+%\vspace{1.5mm}
+
+\begin{subsection*}{\textbf{CONFERENCE PUBLICATIONS}}{}{}{}
+\vspace{-1.5mm}
+
+[C1] Yifei Gao, \textbf{Chengpeng Wang}, Pengxiang Huang, Xuwei Liu, Mingwei Zheng, and Xiangyu Zhang, Raw Pointer Rewriting with LLMs for Translating C to Safer Rust, In Findings of \textbf{ACL 2026}: Findings of the Association for Computational Linguistics.
+
+[C2] Hanyun Jiang, Peisen Yao, Kaiyue Li, Tingting Lin, \textbf{Chengpeng Wang}, and Kui Ren, HintPilot: LLM-based Compiler Hint Synthesis for Code Optimization, In Findings of \textbf{ACL 2026}: Findings of the Association for Computational Linguistics.
+
+[C3] \textbf{Chengpeng Wang}, Yifei Gao, Wuqi Zhang, Xuwei Liu, Jinyao Guo, Mingwei Zheng, Qingkai Shi, and Xiangyu Zhang, NESA: Relational Neuro-Symbolic Static Program Analysis, In \textbf{FSE 2026}: International Conference on the Foundations of Software Engineering.
+
+[C4] Ming Liang, Xiaoheng Xie, Gehao Zhang, Xunjin Zheng, Wei Jiang, \textbf{Chengpeng Wang}, Gang Fan, and Peng Di, RepoFuse: A Dual-Context Approach to Repository-Level Code Completion at Industrial Scale, In \textbf{FSE 2026}, Industry Track: International Conference on the Foundations of Software Engineering.
+
+[C5] Mingwei Zheng, \textbf{Chengpeng Wang}, Xuwei Liu, Jinyao Guo, Shiwei Feng, and Xiangyu Zhang, RFCAudit: AI Agent for Auditing Protocol Implementations Against RFC Specifications, In \textbf{ASE 2025}: International Conference on Automated Software Engineering.
+
+[C6] Danning Xie, Mingwei Zheng, Xuwei Liu, Jiannan Wang, \textbf{Chengpeng Wang}, Lin Tan, and Xiangyu Zhang, CORE: Benchmarking LLMs' Code Reasoning Capabilities through Static Analysis Tasks, In \textbf{NeurIPS 2025}: Annual Conference on Neural Information Processing Systems.
+\mycolortext{\faTrophy\ Spotlight Paper}
+
+[C7] Jinyao Guo$^\#$, \textbf{Chengpeng Wang}$^\#$, Xiangzhe Xu, Zian Su, and Xiangyu Zhang. RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing. In \textbf{ICML 2025}: International Conference on Machine Learning.
+
+[C8] Yuan Li, Peisen Yao, Kan Yu, \textbf{Chengpeng Wang}, Yaoyang Ye, Song Li, Meng Luo, Yepang Liu, and Kui Ren. Understanding Industry Perspectives of Static Application Security Testing Evaluation, In \textbf{FSE 2025}: International Conference on the Foundations of Software Engineering.
+
+[C9] Mingwei Zheng, Danning Xie, Qingkai Shi, \textbf{Chengpeng Wang}, and Xiangyu Zhang, Validating Network Protocol Parsers with Traceable RFC Document Interpretation, In \textbf{ISSTA 2025}: International Symposium on
+Software Testing and Analysis.
+
+[C10] Wei Chen, Bowen Zhang, \textbf{Chengpeng Wang}, Wensheng Tang, and Charles Zhang, Seal: Towards Diverse Specification Inference for Linux Interfaces from Security Patches, In \textbf{EuroSys 2025}: European Conference on Computer Systems.
+
+[C11] \textbf{Chengpeng Wang}, Wuqi Zhang, Zian Su, Xiangzhe Xu, Xiaoheng Xie, and Xiangyu Zhang, LLMDFA: Analyzing Dataflow in Code with Large Language Models, In \textbf{NeurIPS 2024}: Annual Conference on Neural Information Processing Systems
+
+[C12] \textbf{Chengpeng Wang}, Wuqi Zhang, Zian Su, Xiangzhe Xu, and Xiangyu Zhang, Sanitizing Large Language Models in Bug Detection with Data-Flow, In Findings of \textbf{EMNLP 2024}: Empirical Methods in Natural Language Processing
+
+[C13] Li Lin, Zongyin Hao, \textbf{Chengpeng Wang}, Zhuangda Wang, Rongxin Wu, and Gang Fan, SQLess: Dialect-Agnostic SQL Query Simplification, In \textbf{ISSTA 2024}: International Symposium on Software Testing and Analysis
+
+[C14] \textbf{Chengpeng Wang}, Jipeng Zhang, Rongxin Wu, and Charles Zhang, DAInfer: Inferring API Aliasing Specifications from Library Documentation via Neurosymbolic Optimization, In \textbf{FSE 2024}: International Conference on the Foundations of Software Engineering
+
+[C15] Bowen Zhang, Wei Chen, Peisen Yao, \textbf{Chengpeng Wang}, Wensheng Tang, and Charles Zhang, SIRO: Empowering Version Compatibility in Intermediate Representations via Program Synthesis, In \textbf{ASPLOS 2024}: ACM Conference on Architectural Support for Programming Languages and Operating Systems
+
+[C16] Hao Ling, Heqing Huang, \textbf{Chengpeng Wang}, Yuandao Cai, and Charles Zhang, GiantSan: Efficient Memory Sanitization with Segment Folding, In \textbf{ASPLOS 2024}: ACM Conference on Architectural Support for Programming Languages and Operating Systems 
+\mycolortext{\faTrophy\ ACM SIGARCH Best Paper Award}
+
+[C17] Rongxin Wu, Yuxuan He, Jiafeng Huang, \textbf{Chengpeng Wang}, Wensheng Tang, Qingkai Shi, Xiao Xiao, and Charles Zhang, LibAlchemy: A Two-Layer Persistent Summary Design for Taming Third-Party Libraries in Static Bug-Finding Systems, In \textbf{ICSE 2024}: International Conference on Software Engineering
+
+[C18] Wensheng Tang$^\#$, \textbf{Chengpeng Wang}$^\#$, Peisen Yao, Rongxin Wu, Xianjin Fu, Gang Fan, and Charles Zhang, DCLink: Bridging Data Constraint Changes and Implementations in FinTech Systems, In \textbf{ASE 2023} : International Conference on Automated Software Engineering
+
+[C19] \textbf{Chengpeng Wang}, Peisen Yao, Wensheng Tang, Gang Fan, Charles Zhang, Synthesizing Conjunctive Queries for Code Search, In \textbf{ECOOP 2023}: European Conference on Object-Oriented Programming
+
+[C20] Zongyin Hao, Quanfeng Huang, \textbf{Chengpeng Wang}, Jianfeng Wang, Yushan Zhang, Rongxin Wu, and Charles Zhang, Pinolo: Detecting Logical Bugs in Database Management Systems with Approximate Query Synthesis, In \textbf{ATC 2023}: USENIX Annual Technical Conference
+
+[C21] \textbf{Chengpeng Wang}, Gang Fan, Peisen Yao, Fuxiong Pan, and Charles Zhang, Verifying Data Constraint Equivalence in FinTech Systems, In \textbf{ICSE 2023}: International Conference on Software Engineering
+
+[C22] Rongxin Wu, Minglei Chen, \textbf{Chengpeng Wang}, Gang Fan, Jiguang Qiu, and Charles Zhang, Accelerating Build Dependency Error Detection via Virtual Build, In \textbf{ASE 2022} : International Conference on Automated Software Engineering
+
+[C23] \textbf{Chengpeng Wang}, Peisen Yao, Wensheng Tang, Qingkai Shi, and Charles Zhang: {Complexity-Guided Container Replacement Synthesis}, In \textbf{OOPSLA 2022}: SIGPLAN Conference on Objected Oriented Programming, Systems, Languages and Applications 
+\mycolortext{\faTrophy\ ACM SIGPLAN Distinguished Paper Award}
+
+[C24] Gang Fan, \textbf{Chengpeng Wang}, Rongxin Wu, Xiao Xiao, Qingkai Shi, and Charles Zhang: {Escaping Dependency Hell: Finding Build Dependency Errors with the Unified Dependency Graph}, In \textbf{ISSTA 2020}: International Symposium on Software Testing and Analysis
+
+\end{subsection*}
+
+\vspace{1mm}
+
+\begin{subsection*}{\textbf{WORKSHOP and POSTER PUBLICATIONS}}{}{}{}
+
+[W1] Ming Liang, Xiaoheng Xie, Gehao Zhang, Xunjin Zheng, Peng Di, Wei Jiang, Hongwei Chen, \textbf{Chengpeng Wang}, and Gang Fan, RepoGenix: Dual Context-Aided Repository-Level Code Completion with Language Models, In Poster Track, \textbf{ASE 2024}: International Conference on Automated Software Engineering
+
+
+[W2] \textbf{Chengpeng Wang}, CodeSpider: Automatic Code Querying with Multi-modal Conjunctive Query Synthesis, In SRC track, \textbf{SPLASH 2022}: SIGPLAN conference on Systems, Programming, Languages, and Applications: Software for Humanity, Student Research Competition
+
+
+
+[W3] \textbf{Chengpeng Wang}, Yixiao Yang, Han Liu, and Le Kang: {Statistical API Completion Based on Code Relevance Mining}, In \textbf{MAINT 2019}: International Workshop on Mining and Analyzing Interaction Histories 
+
+\end{subsection*}
+
+\end{rSection}
+
+
+
+\begin{rSection}{Academic Services}
+    % \textbf{Program Committee Member:} ASE'25, Forge'25, FSE'25, ISSTA'25, SPLASH'24 SRC, ASE'24 (industrial track), ISSRE'24, Forge'24
+
+    % \textbf{Journal Reviewer:} IEEE Transactions on Software Engineering (TSE)
+
+    % \textbf{Artifact Evaluation Committee:} OOPSLA'24, PLDI'23, FSE'22, ISSTA'22
+
+    % \textbf{Volunteer:} Student Volunteer @ SPLASH 2022, Student Volunteer @ ISSTA 2019
+
+\textbf{Organizing Committee Member:} \\
+{International Conference on the Foundations of Software Engineering (FSE), Student Research Competition (SRC)} \hfill {\em 2027} \\
+{International Workshop on Language Models and Programming Languages (LMPL)} \hfill {\em 2025} 
+
+\textbf{Program Committee Member:} \\
+{ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)} \hfill {\em 2027} \\
+{International Workshop on Language Models and Programming Languages (LMPL)} \hfill {\em 2026} \\
+{International Workshop on Principles of Agentic Engineering (PAgE)} \hfill {\em 2026} \\
+{International Conference on the Foundations of Software Engineering (FSE)} \hfill {\em 2025, 2026, 2027} \\
+{International Conference on Software Engineering (ICSE)} \hfill {\em 2027} \\
+{Annual Conference on Neural Information Processing Systems (NeurIPS)} \hfill {\em 2025, 2026} \\
+{ACL Rolling Review (ARR)} \hfill {\em 2026} \\
+{ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)} \hfill {\em 2026} \\
+{International Symposium on Software Testing and Analysis (ISSTA)} \hfill {\em 2025, 2026} \\
+{International Workshop on Large Language Models for Code (LLM4Code)} \hfill {\em 2026} \\
+{International Conference on Automated Software Engineering (ASE)} \hfill {\em 2025} \\
+{International Conference on AI Foundation Models and Software Engineering (Forge)} \hfill {\em 2024, 2025} \\
+{SPLASH, Student Research Contest Track} \hfill {\em 2024} \\
+{International Conference on Automated Software Engineering (ASE), Industrial Track} \hfill {\em 2024} \\
+{International Symposium on Software Reliability Engineering (ISSRE)} \hfill {\em 2024, 2025}
+
+\textbf{Journal Reviewer:} \\
+{Transactions on Software Engineering and Methodology (TOSEM)} \hfill 2025\\
+{Transactions on Software Engineering (TSE)} \hfill 2024 \\
+{Communications of the ACM (CACM)} \hfill 2026 \\
+
+\vspace{-2mm}
+
+\textbf{Artifact Evaluation Committee Member:} \\
+{International Conference on OOP, Systems, Languages, and Applications (OOPSLA)} \hfill {\em 2024} \\
+{ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)} \hfill {\em 2023} \\
+{International Conference on the Foundations of Software Engineering (FSE)} \hfill {\em 2022} \\
+{International Symposium on Software Testing and Analysis (ISSTA)} \hfill {\em 2022} 
+
+
+\textbf{Volunteer:} \\
+{International Conference on OOP, Systems, Languages, and Applications (OOPSLA)} \hfill {\em 2022} \\
+{Student Volunteer at International Symposium on Software Testing and Analysis (ISSTA)} \hfill {\em 2019} \\
+Long-term mentor of \href{https://www.sigplan.org/LongTermMentoring/}{SIGPLAN-M} \hfill {\em 2024, 2025, 2026} \\
+\end{rSection}
+
+\vspace{-3mm}
+
+
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Teaching} 
+{CS 6215: Advanced Topics in Program Analysis, NUS} \hfill {\em Fall 2026}\\
+{CS 510: Software Engineering, Purdue University} \hfill {\em Fall 2025}\\
+{CS 592: AI and Security, Purdue University} \hfill {\em Fall 2024}\\
+{COMP 3021: Java Programming, HKUST} \hfill {\em Spring/Fall 2022/2023} \\
+{COMP 4631: Computer and Communication Security, HKUST} \hfill {\em Fall 2021} \\
+{COMP 3111/H: Software Engineering, HKUST}\hfill {\em Fall 2020} \\
+{COMP 2011: Programming with C++, HKUST}\hfill {\em Spring 2020} \\
+{Haskell: Functional Language Programming, THU} \hfill {\em Spring 2019} \\
+{Automaton and Formal Logic, THU} \hfill {\em Fall 2018} \\
+\end{rSection}
+
+\begin{rSection}{Presentations and Invited Talks}
+
+\textbf{Neuro-Symbolic Code Auditing for Software Reliability in the AI Era}\\
+National University of Singapore, Singapore Management University \hfill Dec 2025
+
+\textbf{Static Code Auditing for Software Quality Assurance in the AI Era}\\
+Tufts University, Boston \hfill Oct 2025
+
+\textbf{RepoAudit: Human-like AI Auditor for Code Repositories}\\
+RSA Conference 2025, San Francisco \hfill Apr 2025
+
+
+\textbf{Advances in AI-powered Code Security: Next-Level Bug Detection}\\
+Uber's Programming Systems Team. Virtual \hfill Feb 2025\\
+\href{https://www.youtube.com/watch?v=nOS56VC0FTQ}{CodeQL@GitHub}. Virtual \hfill Jan 2025
+
+\textbf{Neuro-Symbolic Static Analysis for Reliable Software Systems}\\
+University of British Columbia, Columbia University \hfill Aug 2025\\
+UC Davis, UIUC, UNSW \hfill May 2025\\
+AST Lab, ETH Zurich. Virtual \hfill Mar 2025\\
+%ByteDance. Virtual \hfill Jan 2025\\
+\href{https://www.polyu.edu.hk/comp/-/media/department/comp/events/research-seminar/2025/20250103_dr-chengpeng-wang.pdf?rev=3dd0f812619941cea495bb8afe0758b7&hash=C8B06503F5BDA6306D88846BCCF604E7}{Department of Computing, Hong Kong Polytechnic University} \hfill Jan 2025\\
+\href{https://datascience.hku.hk/2024/12/ids-distinguished-speaker-series-8-neuro-symbolic-static-analysis-for-reliable-software-systems/}{Institute of Data Science, The University of Hong Kong} \hfill Dec 2024
+
+\textbf{Neuro-Symbolic Static Analysis for Reliable and Performant Software Systems}\\
+School of Computer Science, Nanjing University. Nanjing, China \hfill Dec 2024
+
+\textbf{When Static Analysis Meets Large Language Models: A Neuro-Symbolic Approach}\\
+Ant Group. Virtual \hfill Dec 2024\\
+\href{https://bstn.cc/}{Boston Computation Club}. Virtual \hfill Nov 2024\\
+AI-CyberSecurity Research Lunch Talk, Texas A\&M University (TAMU). Virtual \hfill Oct 2024\\
+School of Software, Tsinghua University. Virtual \hfill Oct 2024
+
+\textbf{Towards Enhancing Reliability and Performance of Data-Centric Systems with Static Analysis}\\
+School of Informatics, Xiamen University. Xiamen, China \hfill Aug 2023
+
+\textbf{Synthesizing Conjunctive Queries for Code Search}\\
+ByteDance. Virtual \hfill Jun 2023
+
+\textbf{Complexity-Guided Container Replacement Synthesis}\\
+AST Lab, ETH Zurich. Virtual \hfill Mar 2023
+
+% \textbf{DAInfer: Inferring API Aliasing Specifications from Library Documentation via Neurosymbolic Optimization}\\ 
+% {FSE} 2024: ACM International Conference on the Foundations of Software Engineering \hfill July 2024
+
+%{SIRO: Empowering Version Compatibility in Intermediate Representations via Program Synthesis}, In {ASPLOS} 2024: ACM Conference on Architectural Support for Programming Languages and Operating Systems, April, 2024.
+
+% {Towards Enhancing Reliability and Performance of Data-Centric Systems with Static Analysis}, School of Informatics, Xiamen University, Aug, 2023.
+
+%{Synthesizing Conjunctive Queries for Code Search}, In {ECOOP} 2023: European Conference on Object-Oriented Programming, July, 2023.
+
+%{Pinolo: Detecting Logical Bugs in Database Management Systems with Approximate Query Synthesis}, In {ATC} 2023: USENIX Annual Technical Conference, July, 2023.
+
+% {Synthesizing Conjunctive Queries for Code Search}, In ByteDance, June, 2023
+
+%{Verifying Data Constraint Equivalence in FinTech Systems}, In {ICSE} 2023 : The IEEE/ACM International Conference on Software Engineering, May, 2023. 
+
+% {Complexity-Guided Container Replacement Synthesis}, In AST lab @ {ETH Zurich}, March, 2023. 
+
+%CodeSpider: Automatic Code Querying with Multi-modal Conjunctive Query Synthesis, In {SPLASH SRC} 2022: The ACM SIGPLAN conference on Systems, Programming, Languages, and Applications: Software for Humanity, Student Research Competition, Dec, 2022.
+
+%{Complexity-Guided Container Replacement Synthesis}, In {OOPSLA} 2022 : The ACM SIGPLAN Conference on Objected Oriented Programming, Systems, Languages and Applications, Dec, 2022. 
+\end{rSection}
+
+
+
+
+\end{resume}
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
