@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RISE Lab</title>
+<link rel="stylesheet" href="./site.css">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..700;1,400..600&amp;display=swap" rel="stylesheet">
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: #FFFFFF; }
+  a { color: #003D7C; text-decoration: none; }
+  a:hover { color: #001F42; text-decoration: underline; }
+</style>
+</helmet>
+<div class="site-shell" style="background:#FFFFFF;color:#000000;font-family:'Source Sans 3','Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:17px;line-height:1.62;min-height:100vh">
+
+  <div style="position:sticky;top:0;z-index:50">
+  <div style="background:#003D7C;color:#FFFFFF">
+    <div class="site-brandbar" style="max-width:1120px;margin:0 auto;padding:0 34px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <div class="site-brand-left" style="display:flex;align-items:center;gap:16px;min-width:0">
+        <a class="nus-wordmark" href="https://www.nus.edu.sg/" target="_blank" style="font-size:37px;font-weight:700;letter-spacing:0.02em;color:#FFFFFF;line-height:1" style-hover="color:#EF7C00;text-decoration:none">NUS</a>
+        <span class="nus-divider" style="width:2px;height:38px;background:#EF7C00"></span>
+        <a class="nus-school" href="https://www.comp.nus.edu.sg/" target="_blank" style="font-size:21px;line-height:1.25;color:#DCE5F0" style-hover="color:#FFFFFF;text-decoration:none">National University of Singapore<br>School of Computing</a>
+      </div>
+    </div>
+  </div>
+  <div style="height:4px;background:#EF7C00"></div>
+  <div style="background:rgba(255,255,255,0.96);backdrop-filter:blur(6px);box-shadow:0 1px 4px rgba(0,0,0,0.08)">
+    <div class="site-nav" style="max-width:1120px;margin:0 auto;padding:0 34px;display:flex;gap:26px;flex-wrap:wrap;align-items:center;height:46px;font-size:17px">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#people">People</a>
+      <a href="publication.html">Publications</a>
+      <a href="#join">Join Us</a>
+    </div>
+  </div>
+  </div>
+
+  
+
+  <div class="site-main" style="max-width:1120px;margin:0 auto;padding:0 34px 96px">
+
+    <div style="padding:54px 0 12px">
+      <h1 style="font-size:46px;font-weight:600;letter-spacing:-0.025em;line-height:1.08;margin:0 0 6px;color:#003D7C">RISE Lab</h1>
+      <div style="font-size:22px;font-weight:600;color:#000000;margin-bottom:22px">Reliable and Intelligent Software Engineering</div>
+      <p style="margin:0;font-size:19.5px;line-height:1.62;color:#000000;text-wrap:pretty">RISE Lab develops principled techniques for building reliable, secure, and efficient software systems. We study how program analysis can be extended with AI to reason about increasingly complex software, and how the same analytical foundations can be used to understand and optimize agentic systems. Our research spans program analysis, software engineering, and machine learning. We are based at the School of Computing, National University of Singapore, as part of <a href="https://nus-plse.github.io/" target="_blank">PLSE@NUS</a>.</p>
+    </div>
+
+    <h2 id="research" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 8px">Research Projects</h2>
+
+    <div style="display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start;padding:14px 0 30px">
+      <div style="flex:0 1 340px;min-width:260px">
+        <img src="figs/dir1-agentic-program-analysis.png?v=20260829" alt="Agentic program analysis" style="width:100%;height:auto;background:#F4F8FC;display:block">
+      </div>
+      <div style="flex:1 1 520px;min-width:280px;position:relative;top:-10px">
+        <h3 style="font-size:21px;font-weight:600;margin:0 0 6px;color:#000000">Agentic Program Analysis</h3>
+        <div style="font-size:17px;font-style:italic;color:#003D7C;border-left:3px solid #EF7C00;padding-left:12px;margin:6px 0 12px">How can AI agents expand the reach of program analysis?</div>
+        <p style="margin:0;font-size:17px;line-height:1.62;text-wrap:pretty">We develop program analyses augmented by large language models and AI agents, targeting problems such as bug detection, bug validation, and program verification. Models and agents help gather semantic context, formulate hypotheses, and guide analysis across multi-modal software artifacts. Our goal is to make program analysis more adaptive to new systems, properties, and software domains, while keeping its conclusions grounded in evidence that can be independently examined.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:40px;flex-wrap:wrap;align-items:flex-start;padding:14px 0 30px">
+      <div style="flex:0 1 340px;min-width:260px">
+        <img src="figs/dir2-pa-for-agentic-systems.png?v=20260829" alt="Analyzing agentic systems" style="width:100%;height:auto;background:#F4F8FC;display:block">
+      </div>
+      <div style="flex:1 1 520px;min-width:280px;position:relative;top:-10px">
+        <h3 style="font-size:21px;font-weight:600;margin:0 0 6px;color:#000000">Program Analysis for Agentic Systems</h3>
+        <div style="font-size:17px;font-style:italic;color:#003D7C;border-left:3px solid #EF7C00;padding-left:12px;margin:6px 0 12px">How can we understand and reason about the behavior of agentic systems?</div>
+        <p style="margin:0;font-size:17px;line-height:1.62;text-wrap:pretty">Agentic systems span software tools, orchestration harnesses, and natural-language artifacts. Interactions among these layers introduce new challenges for observing, analyzing, and understanding the semantics of agentic systems. We develop program-analysis techniques tailored to different layers of the agentic stack, making cross-layer interactions observable and auditable. Our goal is to improve the reliability and performance of increasingly autonomous and large-scale agentic systems.</p>
+      </div>
+    </div>
+
+    <h2 id="people" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 20px">People</h2>
+    <div style="font-size:19px;font-weight:600;color:#000000;margin-bottom:16px">Faculty</div>
+    <div style="margin-bottom:36px;display:flex;justify-content:center;max-width:972px">
+      <div style="width:172px;text-align:center">
+        <img src="photos/chengpeng_wang.jpg" alt="Chengpeng Wang" style="width:172px;height:172px;object-fit:cover;object-position:50% 16%;border-radius:50%;display:block">
+        <div style="font-size:17px;font-weight:600;line-height:1.35;margin-top:10px"><a href="index.html">Chengpeng Wang</a></div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">Assistant Professor</div>
+      </div>
+    </div>
+
+    <div style="font-size:19px;font-weight:600;color:#000000;margin-bottom:16px">Students and Research Staff</div>
+    <div class="people-grid" style="display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start">
+      <div style="flex:0 0 172px;width:172px;text-align:center">
+        <a href="https://profile.snakin.top/" target="_blank" rel="noopener noreferrer" aria-label="Zhiwei Lin profile" style="width:172px;height:172px;overflow:hidden;border-radius:50%;background:#F4F6F9;display:block">
+          <img src="photos/zhiwei_lin.jpg" alt="Zhiwei Lin" style="width:100%;height:100%;object-fit:cover;object-position:50% 48%;transform:scale(1.7);transform-origin:50% 48%;display:block">
+        </a>
+        <div style="font-size:17px;font-weight:600;line-height:1.35;margin-top:10px"><a href="https://profile.snakin.top/" target="_blank" rel="noopener noreferrer">Zhiwei Lin</a></div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">Ph.D. student</div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">2026.08 –</div>
+      </div>
+      <div style="flex:0 0 172px;width:172px;text-align:center">
+        <a href="https://vietanh1010.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Nguyen Viet Anh profile" style="width:172px;height:172px;overflow:hidden;border-radius:50%;background:#F4F6F9;display:block">
+          <img src="photos/viet_anh_nguyen_sq.png" alt="Nguyen Viet Anh" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block">
+        </a>
+        <div style="font-size:17px;font-weight:600;line-height:1.35;margin-top:10px"><a href="https://vietanh1010.github.io/" target="_blank" rel="noopener noreferrer">Nguyen Viet Anh</a></div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">Research assistant</div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">2026.08 –</div>
+      </div>
+      <div style="flex:0 0 172px;width:172px;text-align:center">
+        <a href="https://erchiusx.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Zeyue Jia profile" style="width:172px;height:172px;overflow:hidden;border-radius:50%;background:#F4F6F9;display:block">
+          <img src="photos/zeyue_jia.jpg" alt="Zeyue Jia" style="width:100%;height:100%;object-fit:cover;object-position:50% 8%;display:block">
+        </a>
+        <div style="font-size:17px;font-weight:600;line-height:1.35;margin-top:10px"><a href="https://erchiusx.github.io/" target="_blank" rel="noopener noreferrer">Zeyue Jia</a></div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">Master student</div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">2026.07 –</div>
+      </div>
+      <div style="flex:0 0 172px;width:172px;text-align:center">
+        <a href="https://sg.linkedin.com/in/yipeng-zhang-931464340" target="_blank" rel="noopener noreferrer" aria-label="Yipeng Zhang profile" style="width:172px;height:172px;overflow:hidden;border-radius:50%;background:#F4F6F9;display:block">
+          <img src="photos/yipeng_zhang.jpg" alt="Yipeng Zhang" style="width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block">
+        </a>
+        <div style="font-size:17px;font-weight:600;line-height:1.35;margin-top:10px"><a href="https://sg.linkedin.com/in/yipeng-zhang-931464340" target="_blank" rel="noopener noreferrer">Yipeng Zhang</a></div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">Master student</div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">2026.08 –</div>
+      </div>
+      <div style="flex:0 0 172px;width:172px;text-align:center">
+        <a href="https://sg.linkedin.com/in/chua-chong-sun-aa553028a" target="_blank" rel="noopener noreferrer" aria-label="Chua Chong Sun profile" style="width:172px;height:172px;overflow:hidden;border-radius:50%;background:#F4F6F9;display:block">
+          <img src="photos/chong_sun_sq.png" alt="Chua Chong Sun" style="width:100%;height:100%;object-fit:cover;object-position:50% 45%;display:block">
+        </a>
+        <div style="font-size:17px;font-weight:600;line-height:1.35;margin-top:10px"><a href="https://sg.linkedin.com/in/chua-chong-sun-aa553028a" target="_blank" rel="noopener noreferrer">Chua Chong Sun</a></div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">Undergraduate (FYP)</div>
+        <div style="font-size:17px;color:#000000;line-height:1.35">2026.08 –</div>
+      </div>
+    </div>
+
+
+    <h2 id="projects" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 8px">Research Highlights</h2>
+    <p style="margin:0 0 24px;font-size:17px;color:#000000">Selected projects from RISE and our collaborators.</p>
+    <sc-for list="{{ projects }}" as="pr" hint-placeholder-count="4">
+      <div style="display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start;margin-bottom:22px">
+        <div style="flex:0 0 132px">
+          <div style="font-size:21px;font-weight:700;color:#003D7C;line-height:1.2">{{ pr.name }}</div>
+          <div style="font-size:17px;color:#000000;font-weight:600">{{ pr.venue }}</div>
+        </div>
+        <div style="flex:1 1 460px;min-width:0">
+          <div style="font-size:17.5px;font-weight:600;line-height:1.45;text-wrap:pretty">{{ pr.title }}</div>
+          <p style="margin:3px 0 5px;font-size:17px;line-height:1.58;color:#000000;text-wrap:pretty">{{ pr.blurb }}</p>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;font-size:17px">
+            <sc-for list="{{ pr.links }}" as="lk" hint-placeholder-count="2"><a href="{{ lk.href }}" target="_blank">{{ lk.label }}</a></sc-for>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+
+    <h2 id="join" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 18px">Join RISE</h2>
+    <div>
+      <p style="margin:0 0 14px;font-size:17px;line-height:1.66;text-wrap:pretty">We are looking for Postdoctoral Fellows, Ph.D. students, research interns, and visiting students to join RISE Lab at NUS.</p>
+      <p style="margin:0 0 14px;font-size:17px;line-height:1.66;text-wrap:pretty">We welcome students with backgrounds in software engineering, programming languages, machine learning, and software security. Prior experience across all of these areas is not required. We are particularly interested in students who enjoy working on important problems in real software systems and developing principled technical solutions.</p>
+      <div style="background:#F4F6F9;border-left:4px solid #EF7C00;padding:18px 20px;font-size:17px;line-height:1.66;text-wrap:pretty">To apply, email <a href="mailto:wang-chengpeng@nus.edu.sg">wang-chengpeng@nus.edu.sg</a> with your CV and a short description of the research problems you would like to explore.</div>
+    </div>
+  </div><div style="background:#003D7C;color:#DCE5F0">
+    <div style="height:4px;background:#EF7C00"></div>
+    <div class="site-footer-inner" style="max-width:1120px;margin:0 auto;padding:26px 34px;text-align:center;font-size:15.5px">Last updated 2026.08</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;projectCount&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:4,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:1,&quot;max&quot;:4,&quot;section&quot;:&quot;Content&quot;}}">
+const PROJECTS = [
+  {
+    name: "Survey", venue: "FnTPL 2026",
+    title: "Neurosymbolic Code Auditing",
+    blurb: "A comprehensive survey of how large language models and static program analysis can work in synergy for code auditing.",
+    links: [{ label: "[paper]", href: "publications/neurosym_auditing.pdf" }, { label: "[code]", href: "https://github.com/chengpeng-wang/ASE" }],
+  },
+  {
+    name: "NESA", venue: "FSE 2026",
+    title: "Relational Neuro-Symbolic Static Program Analysis",
+    blurb: "Combining neural reasoning with relational static analysis to build customizable program analyses.",
+    links: [{ label: "[paper]", href: "https://arxiv.org/abs/2412.14399" }, { label: "[code]", href: "https://github.com/chengpeng-wang/NESA" }],
+  },
+  {
+    name: "BugScope", venue: "COLM 2026",
+    title: "Learn to Find Bugs Like Human",
+    blurb: "An LLM-based auditor that detects bugs by example, supporting the discovery of bugs beyond data-flow bug classes.",
+    links: [{ label: "[paper]", href: "https://arxiv.org/abs/2507.15671" }, { label: "[code]", href: "https://github.com/jinyaoguo/BugScope" }],
+  },
+  {
+    name: "RepoAudit", venue: "ICML 2025",
+    title: "An Autonomous LLM-Agent for Repository-Level Code Auditing",
+    blurb: "A repository-level code auditor that enables bug detection without program compilation.",
+    links: [{ label: "[project]", href: "https://repoaudit-home.github.io/" }, { label: "[paper]", href: "https://arxiv.org/abs/2501.18160" }, { label: "[code]", href: "https://github.com/PurCL/RepoAudit" }],
+  },
+];
+
+const PUBS = [
+  { venue: "Foundations and Trends in Programming Languages, 2026", title: "Neurosymbolic Code Auditing", url: "publications/neurosym_auditing.pdf", authors: "Chengpeng Wang, Zhuo Zhang, Xiangzhe Xu, Mingwei Zheng, Guannan Wei, and Xiangyu Zhang" },
+  { venue: "Conference on Language Modeling (COLM), 2026", title: "BugScope: Learn to Find Bugs Like Human", url: "https://arxiv.org/abs/2507.15671", authors: "Jinyao Guo, Chengpeng Wang, Dominic Deluca, Jinjie Liu, Zhuo Zhang, and Xiangyu Zhang" },
+  { venue: "ACM International Conference on the Foundations of Software Engineering (FSE), 2026", title: "NESA: Relational Neuro-Symbolic Static Program Analysis", url: "https://arxiv.org/abs/2412.14399", authors: "Chengpeng Wang, Yifei Gao, Wuqi Zhang, Xuwei Liu, Jinyao Guo, Mingwei Zheng, Qingkai Shi, and Xiangyu Zhang" },
+  { venue: "IEEE/ACM International Conference on Automated Software Engineering (ASE), 2025", title: "RFCAudit: AI Agent for Auditing Protocol Implementations Against RFC Specifications", url: "https://arxiv.org/pdf/2506.00714", authors: "Mingwei Zheng, Chengpeng Wang, Xuwei Liu, Jinyao Guo, Shiwei Feng, and Xiangyu Zhang" },
+  { venue: "International Conference on Machine Learning (ICML), 2025", title: "RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing", url: "https://arxiv.org/pdf/2501.18160", authors: "Jinyao Guo#, Chengpeng Wang#, Xiangzhe Xu, Zian Su, and Xiangyu Zhang" },
+];
+
+class Component extends DCLogic {
+  renderVals() {
+    const n = this.props.projectCount ?? 4;
+    return { projects: PROJECTS.slice(0, n), pubs: PUBS };
+  }
+}
+
+</script>
+</body>
+</html>

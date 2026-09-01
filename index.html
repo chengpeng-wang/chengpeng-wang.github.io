@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chengpeng Wang</title>
+<link rel="stylesheet" href="./site.css">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..700;1,400..600&display=swap" rel="stylesheet" />
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: #FFFFFF; }
+  a { color: #003D7C; text-decoration: none; }
+  a:hover { color: #001F42; text-decoration: underline; }
+</style>
+</helmet>
+<div class="site-shell" style="background:#FFFFFF;color:#000000;font-family:'Source Sans 3','Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:17px;line-height:1.62;min-height:100vh">
+
+  <div style="position:sticky;top:0;z-index:50">
+  <div style="background:#003D7C;color:#FFFFFF">
+    <div class="site-brandbar" style="max-width:1120px;margin:0 auto;padding:0 34px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <div class="site-brand-left" style="display:flex;align-items:center;gap:16px;min-width:0">
+        <a class="nus-wordmark" href="https://www.nus.edu.sg/" target="_blank" style="font-size:37px;font-weight:700;letter-spacing:0.02em;color:#FFFFFF;line-height:1" style-hover="color:#EF7C00;text-decoration:none">NUS</a>
+        <span class="nus-divider" style="width:2px;height:38px;background:#EF7C00"></span>
+        <a class="nus-school" href="https://www.comp.nus.edu.sg/" target="_blank" style="font-size:21px;line-height:1.25;color:#DCE5F0" style-hover="color:#FFFFFF;text-decoration:none">National University of Singapore<br />School of Computing</a>
+      </div>
+      <a class="rise-link" href="lab.html" style="font-size:21px;font-weight:600;color:#FFFFFF;border-bottom:2px solid #EF7C00;padding-bottom:2px;white-space:nowrap" style-hover="color:#EF7C00;text-decoration:none">RISE Lab</a>
+    </div>
+  </div>
+  <div style="height:4px;background:#EF7C00"></div>
+  <div style="background:rgba(255,255,255,0.96);backdrop-filter:blur(6px);box-shadow:0 1px 4px rgba(0,0,0,0.08)">
+    <div class="site-nav" style="max-width:1120px;margin:0 auto;padding:0 34px;display:flex;gap:26px;flex-wrap:wrap;align-items:center;height:46px;font-size:17px">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#students">Students</a>
+      <a href="#publications">Publications</a>
+      <a href="#awards">Awards</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#service">Service</a>
+      <a href="#misc">Misc</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="site-main" style="max-width:1120px;margin:0 auto;padding:0 34px 96px">
+
+    <div class="profile-hero" style="display:flex;gap:46px;flex-wrap:wrap;align-items:flex-start;padding:52px 0 44px">
+      <img class="profile-photo" src="photos/chengpeng_wang.jpg" alt="Chengpeng Wang" style="flex:0 0 200px;width:200px;height:236px;object-fit:cover;object-position:50% 16%;display:block" />
+      <div class="profile-content" style="flex:1 1 460px;min-width:0">
+        <h1 style="font-size:33.6px;font-weight:600;letter-spacing:-0.02em;line-height:1.1;margin:0 0 10px;color:#003D7C">Chengpeng Wang</h1>
+        <div style="font-size:19.5px;color:#000000;line-height:1.5;margin-bottom:22px">Assistant Professor of Computer Science<br />School of Computing, National University of Singapore</div>
+        <div style="font-size:17px;color:#000000;line-height:1.7;margin-bottom:22px">
+          <div>COM1 #03-20, 13 Computing Drive, Singapore 117417</div>
+          <div><a href="mailto:wang-chengpeng@nus.edu.sg">wang-chengpeng@nus.edu.sg</a></div>
+        </div>
+        <div style="display:flex;gap:22px;flex-wrap:wrap;font-size:17px">
+          <a href="CV/resume.pdf" target="_blank">Curriculum Vitae</a>
+          <a href="https://scholar.google.com/citations?hl=EN&user=z_Z5jn4AAAAJ" target="_blank">Google Scholar</a>
+          <a href="https://dblp.org/pid/240/2235-1.html" target="_blank">DBLP</a>
+          <a href="https://github.com/chengpeng-wang" target="_blank">GitHub</a>
+          <a href="https://x.com/Chasen86341870" target="_blank">X</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" style="scroll-margin-top:140px">
+      <div>
+        <h2 style="font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:0 0 16px">About Me</h2>
+        <p style="margin:0 0 16px;font-size:17px;line-height:1.68;text-wrap:pretty">I am an Assistant Professor of Computer Science in the <a href="https://www.comp.nus.edu.sg/" target="_blank">School of Computing</a> at the <a href="https://www.nus.edu.sg/" target="_blank">National University of Singapore</a>, leading the <a href="lab.html">RISE Lab</a> (Reliable and Intelligent Software Engineering). My research sits at the intersection of software engineering, programming languages, and machine learning. I develop program analysis techniques that improve the reliability and security of modern software systems, with particular interests in AI-assisted software development, agentic software engineering, and AI agent security.</p>
+        <p style="margin:0 0 16px;font-size:17px;line-height:1.68;text-wrap:pretty">Before joining NUS, I was a Post-Doctoral Researcher in the <a href="https://www.cs.purdue.edu/" target="_blank">Department of Computer Science</a> at <a href="https://www.purdue.edu/" target="_blank">Purdue University</a>, working with Prof. <a href="https://www.cs.purdue.edu/homes/xyzhang/" target="_blank">Xiangyu Zhang</a>. I obtained my Ph.D. from the <a href="https://hkust.edu.hk/" target="_blank">Hong Kong University of Science and Technology</a>, advised by Prof. <a href="http://www.cse.ust.hk/~charlesz/" target="_blank">Charles Zhang</a>, and received my master's and bachelor's degrees from <a href="https://www.tsinghua.edu.cn/en/" target="_blank">Tsinghua University</a>.</p>
+      </div>
+    </div>
+
+    <h2 id="news" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 18px">News</h2>
+    <div style="display:flex;gap:18px;align-items:flex-start;background:#F4F6F9;border-left:4px solid #EF7C00;padding:14px 18px;margin-bottom:16px">
+      <div style="flex:1 1 auto;min-width:0;font-size:17px;text-wrap:pretty">We actively maintain the paper list on <a href="https://github.com/PurCL/ASE" target="_blank">Agentic Software Engineering</a>. Stars, forks, and contributions are welcome.</div>
+    </div>
+    <div style="max-height:{{ newsMaxHeight }};overflow-y:auto;padding-right:8px">
+    <sc-for list="{{ newsShown }}" as="n" hint-placeholder-count="7">
+      <div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:11px">
+        <div style="flex:0 0 84px;font-size:17px;font-weight:600;color:#000000;font-variant-numeric:tabular-nums">{{ n.date }}</div>
+        <div style="flex:1 1 auto;min-width:0;font-size:17px;line-height:1.6;text-wrap:pretty">
+          <sc-for list="{{ n.parts }}" as="p" hint-placeholder-count="2"><sc-if value="{{ p.isLink }}"><a href="{{ p.href }}" target="_blank">{{ p.text }}</a></sc-if><sc-if value="{{ p.isText }}"><span>{{ p.text }}</span></sc-if></sc-for>
+        </div>
+      </div>
+    </sc-for>
+    </div>
+
+    <h2 id="students" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 16px">Students</h2>
+    <p style="margin:0 0 20px;font-size:17px;line-height:1.68;text-wrap:pretty">I am looking for Postdoctoral Fellows, Ph.D. students, research interns, and visiting students to join the <a href="lab.html">RISE Lab</a> at NUS. I am particularly interested in working with self-motivated students excited about program analysis, agentic software engineering, and agent security. If you are interested, please send me an <a href="mailto:wang-chengpeng@nus.edu.sg">email</a> with your CV.</p>
+    <sc-for list="{{ team }}" as="m" hint-placeholder-count="5">
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:baseline;margin-bottom:7px;font-size:17px">
+        <div style="flex:0 0 200px;font-weight:600"><a href="{{ m.url }}" target="_blank" rel="noopener noreferrer">{{ m.name }}</a></div>
+        <div style="flex:1 1 240px;color:#000000">{{ m.role }}</div>
+      </div>
+    </sc-for>
+
+    <h2 id="publications" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 8px">Selected Publications</h2>
+    <p style="margin:0 0 8px;font-size:17px;color:#000000;text-wrap:pretty">Selected papers. <span style="color:#000000">#</span> denotes equal contribution.</p>
+    <div style="margin-bottom:24px;font-size:17px"><a href="publication.html">View all publications &rarr;</a></div>
+    <sc-for list="{{ pubs }}" as="pub" hint-placeholder-count="6">
+      <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:15px">
+        <div style="flex:0 0 34px;font-size:17px;color:#000000;padding-top:1px;font-variant-numeric:tabular-nums">{{ pub.label }}</div>
+        <div style="flex:1 1 auto;min-width:0;font-size:17px;line-height:1.58">
+          <div style="font-weight:600;text-wrap:pretty"><a href="{{ pub.url }}" target="_blank">{{ pub.title }}</a></div>
+          <div style="color:#000000;text-wrap:pretty">{{ pub.pre }}<span>Chengpeng Wang</span>{{ pub.post }}</div>
+          <div style="color:#000000;text-wrap:pretty"><em>{{ pub.venueFull }}</em></div>
+          <sc-if value="{{ pub.note }}"><div style="color:#C0392B;font-weight:600;text-wrap:pretty">&#127942; {{ pub.note }}</div></sc-if>
+        </div>
+      </div>
+    </sc-for>
+
+    <h2 id="awards" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 18px">Honors and Awards</h2>
+    <sc-for list="{{ awards }}" as="a" hint-placeholder-count="6">
+      <div style="display:flex;gap:18px;align-items:baseline;margin-bottom:8px;font-size:17px">
+        <div style="flex:0 0 56px;font-weight:600;color:#000000;font-variant-numeric:tabular-nums">{{ a.year }}</div>
+        <div style="flex:1 1 auto;min-width:0;text-wrap:pretty">{{ a.title }}</div>
+      </div>
+    </sc-for>
+
+    <h2 id="teaching" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 18px">Teaching</h2>
+    <sc-for list="{{ teaching }}" as="t" hint-placeholder-count="6">
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:baseline;margin-bottom:8px;font-size:17px">
+        <div style="flex:0 0 104px;font-weight:600">{{ t.code }}</div>
+        <div style="flex:1 1 300px;min-width:0">{{ t.name }}</div>
+        <div style="flex:0 0 auto;color:#000000;font-size:17px">{{ t.when }}</div>
+      </div>
+    </sc-for>
+
+    <h2 id="service" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 18px">Professional Service</h2>
+    <sc-for list="{{ service }}" as="s" hint-placeholder-count="5">
+      <div style="margin-bottom:14px;font-size:17px;line-height:1.6;text-wrap:pretty"><span style="font-weight:600">{{ s.label }}.</span> {{ s.items }}</div>
+    </sc-for>
+    <div style="margin-bottom:14px;font-size:17px;line-height:1.6"><span style="font-weight:600">Mentoring.</span> Long-term mentor, <a href="https://www.sigplan.org/LongTermMentoring/" target="_blank">SIGPLAN-M</a></div>
+
+    <h2 id="misc" style="scroll-margin-top:140px;font-size:27px;font-weight:600;letter-spacing:-0.012em;color:#003D7C;margin:46px 0 18px">Miscellaneous</h2>
+    <div style="font-size:17px;line-height:1.7">
+      <div style="margin-bottom:12px"><span style="font-weight:600">Paper collections.</span> <a href="https://github.com/PurCL/ASE" target="_blank">Agentic Software Engineering</a></div>
+      <div style="margin-bottom:12px"><span style="font-weight:600">Program analysis reading.</span> <a href="https://www.springer.com/gp/book/9783540741121" target="_blank">The Calculus of Computation</a>; <a href="https://www.semanticscholar.org/paper/Data-Flow-Analysis-Theory-and-Practice-Khedker-Sanyal/b99a9a00d008c3d99047277430a6b5435e01cfa1" target="_blank">Data Flow Analysis: Theory and Practice</a>; <a href="https://cs.au.dk/~amoeller/spa/" target="_blank">Static Program Analysis</a></div>
+      <div><span style="font-weight:600">Academic writing.</span> <a href="https://www.springer.com/gp/book/9781447166382" target="_blank">Writing for Computer Science</a>; <a href="http://www.jlakes.org/ch/web/The-elements-of-style.pdf" target="_blank">The Elements of Style</a></div>
+    </div>
+  </div>
+
+  <div style="background:#003D7C;color:#DCE5F0">
+    <div style="height:4px;background:#EF7C00"></div>
+    <div class="site-footer-inner" style="max-width:1120px;margin:0 auto;padding:26px 34px;text-align:center;font-size:15.5px">Last updated 2026.08</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;newsBoxHeight&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:340,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:200,&quot;max&quot;:700,&quot;unit&quot;:&quot;px&quot;,&quot;section&quot;:&quot;Layout&quot;},&quot;selectedPublicationCount&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:8,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:3,&quot;max&quot;:8,&quot;section&quot;:&quot;Content&quot;}}">
+const T = (text) => ({ text, isText: true });
+const L = (text, href) => ({ text, href, isLink: true });
+const N = (date, ...parts) => ({ date, parts });
+
+const NEWS = [
+  N("07/2026", T("Our survey "), L("Neurosymbolic Code Auditing", "publications/neurosym_auditing.pdf"), T(" was accepted to "), L("Foundations and Trends in Programming Languages", "https://www.emerald.com/ftpgl"), T(".")),
+  N("07/2026", L("BugScope", "https://arxiv.org/abs/2507.15671"), T(", an enhanced extension of "), L("RepoAudit", "https://arxiv.org/abs/2501.18160"), T(", was accepted to COLM'26.")),
+  N("05/2026", T("I am co-chairing the Student Research Competition track of "), L("FSE'27", "https://conf.researchr.org/home/fse-2027"), T(". Looking forward to your submissions.")),
+  N("05/2026", T("I am serving on the program committee of "), L("OOPSLA'27", "https://conf.researchr.org/track/splash-2027/splashoopsla2027"), T(". Please consider submitting your work!")),
+  N("04/2026", T("I am serving on the program committee of "), L("FSE'27", "https://conf.researchr.org/home/fse-2027"), T(".")),
+  N("03/2026", T("Our work "), L("NESA", "https://arxiv.org/abs/2412.14399"), T(", a neuro-symbolic Datalog-based static analysis framework, was accepted to FSE'26.")),
+  N("02/2026", T("I am serving on the program committee of "), L("ICSE'27", "https://conf.researchr.org/track/icse-2027/icse-2027-research-track"), T(".")),
+  N("11/2025", T("I released "), L("RepoSlice", "https://github.com/PurCL/RepoSlice"), T(", an educational framework of LLM-driven program slicing. Here is the "), L("tutorial", "https://github.com/PurCL/RepoSlice/raw/refs/heads/main/docs/CS510-Fall25-Project3-Tutorial.pptx"), T(".")),
+  N("11/2025", T("I was honored to receive the ASE 2025 Distinguished Reviewer Award.")),
+  N("09/2025", T("Our work "), L("RFCAudit", "https://arxiv.org/pdf/2506.00714"), T(" was accepted to "), L("ASE'25", "https://conf.researchr.org/home/ase-2025"), T(". It has detected dozens of functional bugs in network protocol implementations. Congratulations to "), L("Mingwei", "https://zmw12306.github.io/"), T("!")),
+  N("09/2025", T("Our benchmark "), L("CoRe", "https://corebench.github.io/"), T(" was accepted to "), L("NeurIPS'25", "https://neurips.cc/"), T(" (Spotlight). Congratulations to "), L("Danning", "https://dnxie.github.io/"), T(" and "), L("Mingwei", "https://zmw12306.github.io/"), T("!")),
+  N("05/2025", L("RepoAudit", "https://repoaudit-home.github.io/"), T(" was accepted to "), L("ICML 2025", "https://icml.cc/virtual/2025/poster/45170"), T(". It has uncovered over 200 zero-day vulnerabilities in high-profile open-source projects — see the "), L("preprint", "https://arxiv.org/abs/2501.18160"), T(", "), L("code", "https://github.com/PurCL/RepoAudit"), T(", and "), L("bug gallery", "https://repoaudit-home.github.io/bugreports.html"), T(".")),
+  N("03/2025", T("Our work on Protocol Parser Testing was accepted to "), L("ISSTA'25", "https://conf.researchr.org/home/issta-2025"), T(". Congratulations to "), L("Mingwei", "https://zmw12306.github.io/"), T("!")),
+  N("01/2025", T("I delivered an invited talk, "), L("Advances in AI-powered Code Security", "slides/talk_GitHub.pdf"), T(", to the CodeQL team at GitHub. Here are the "), L("slides", "slides/talk_GitHub.pdf"), T(" and "), L("recording", "https://youtu.be/nOS56VC0FTQ"), T(".")),
+  N("11/2024", T("I was invited to present LLM-aided static analysis at "), L("Boston Computation Club", "https://bstn.cc/"), T(". Here are the "), L("slides", "slides/talk_BCC.pdf"), T(" and "), L("recording", "https://www.youtube.com/watch?v=qdybQKaT-Aw"), T(".")),
+  N("09/2024", T("Our work "), L("LLMDFA", "publications/LLMDFA_NeurIPS2024.pdf"), T(" was accepted to NeurIPS'24.")),
+  N("09/2024", T("Our work "), L("LLMSAN", "publications/LLMSAN_EMNLP2024.pdf"), T(" was accepted to Findings of EMNLP'24.")),
+  N("04/2024", T("Our work "), L("GiantSan", "publications/ASPLOS2024_GiantSan.pdf"), T(" received the Best Paper Award at ASPLOS 2024. Congratulations to Hao!")),
+  N("12/2023", T("I passed my Ph.D. defense and officially obtained the Ph.D. degree on the last day of 2023.")),
+];
+
+const P = (year, venue, title, url, authors, note, selected) => ({ year, venue, title, url, authors, note, selected });
+
+const PUBS = [
+  P(2026, "arXiv preprint, July 2026", "SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills", "https://arxiv.org/abs/2607.09016", "Xuan Chen, Chengpeng Wang, Lu Yan, and Xiangyu Zhang"),
+  P(2026, "Foundations and Trends in Programming Languages (FnTPL)", "Neurosymbolic Code Auditing", "publications/neurosym_auditing.pdf", "Chengpeng Wang, Zhuo Zhang, Xiangzhe Xu, Mingwei Zheng, Guannan Wei, and Xiangyu Zhang", "", true),
+  P(2026, "Conference on Language Modeling (COLM)", "BugScope: Learn to Find Bugs Like Human", "https://arxiv.org/abs/2507.15671", "Jinyao Guo, Chengpeng Wang, Dominic Deluca, Jinjie Liu, Zhuo Zhang, and Xiangyu Zhang", "", true),
+  P(2026, "Findings of EMNLP", "Benchmarking Explainable Vulnerability Detection with Calling Contexts", "publication.html", "Jinyao Guo, Yaoyang Ye, Zhihao Guo, Mingwei Zheng, Tiantai Zhang, Xuwei Liu, Xiaolong Jin, Congyu Liu, Xiangzhe Xu, Zian Su, Ziyun Song, Zhou Xuan, Xiao Cheng, Chengpeng Wang, and Xiangyu Zhang"),
+  P(2026, "Findings of ACL", "Raw Pointer Rewriting with LLMs for Translating C to Safer Rust", "https://arxiv.org/abs/2505.04852", "Yifei Gao, Chengpeng Wang, Pengxiang Huang, Xuwei Liu, Mingwei Zheng, and Xiangyu Zhang"),
+  P(2026, "Findings of ACL", "HintPilot: LLM-based Compiler Hint Synthesis for Code Optimization", "https://openreview.net/pdf?id=CvhC1jFF3H", "Hanyun Jiang, Peisen Yao, Kaiyue Li, Tingting Lin, Chengpeng Wang, and Kui Ren"),
+  P(2026, "ACM International Conference on the Foundations of Software Engineering (FSE)", "NESA: Relational Neuro-Symbolic Static Program Analysis", "https://arxiv.org/abs/2412.14399", "Chengpeng Wang, Yifei Gao, Wuqi Zhang, Xuwei Liu, Jinyao Guo, Mingwei Zheng, Qingkai Shi, and Xiangyu Zhang", "", true),
+  P(2026, "FSE Industry Track", "RepoFuse: A Dual-Context Approach to Repository-Level Code Completion at Industrial Scale", "publication.html", "Ming Liang, Xiaoheng Xie, Gehao Zhang, Xunjin Zheng, Wei Jiang, Chengpeng Wang, Gang Fan, and Peng Di"),
+  P(2025, "IEEE/ACM International Conference on Automated Software Engineering (ASE)", "RFCAudit: AI Agent for Auditing Protocol Implementations Against RFC Specifications", "https://arxiv.org/pdf/2506.00714", "Mingwei Zheng, Chengpeng Wang, Xuwei Liu, Jinyao Guo, Shiwei Feng, and Xiangyu Zhang"),
+  P(2025, "Conference on Neural Information Processing Systems (NeurIPS)", "CoRe: Benchmarking LLMs' Code Reasoning Capabilities through Static Analysis Tasks", "https://arxiv.org/abs/2507.05269", "Danning Xie, Mingwei Zheng, Xuwei Liu, Jiannan Wang, Chengpeng Wang, Lin Tan, and Xiangyu Zhang", "Spotlight"),
+  P(2025, "ACM Transactions on Software Engineering and Methodology (TOSEM)", "ReachCheck: Compositional Library-Aware Call Graph Reachability Analysis in the IDEs", "publications/TOSEM2025.pdf", "Chao Wang, Li Lin, Chengpeng Wang, Jiafeng Huang, Congxia Wu, and Rongxin Wu"),
+  P(2025, "ACM Transactions on Computer Systems (TOCS)", "GiantSan: Efficient Operation-Level Memory Sanitization with Segment Folding", "publications/tocs2025.pdf", "Hao Ling, Heqing Huang, Chengpeng Wang, Yuandao Cai, and Charles Zhang", "Invited extended version of the ASPLOS'24 paper"),
+  P(2025, "International Conference on Machine Learning (ICML)", "RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing", "https://arxiv.org/pdf/2501.18160", "Jinyao Guo#, Chengpeng Wang#, Xiangzhe Xu, Zian Su, and Xiangyu Zhang", "", true),
+  P(2025, "ACM International Conference on the Foundations of Software Engineering (FSE)", "Understanding Industry Perspectives of Static Application Security Testing Evaluation", "publications/FSE2025.pdf", "Yuan Li, Peisen Yao, Kan Yu, Chengpeng Wang, Yaoyang Ye, Song Li, Meng Luo, Yepang Liu, and Kui Ren"),
+  P(2025, "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)", "Validating Network Protocol Parsers with Traceable RFC Document Interpretation", "publications/ISSTA25.pdf", "Mingwei Zheng, Danning Xie, Qingkai Shi, Chengpeng Wang, and Xiangyu Zhang"),
+  P(2025, "European Conference on Computer Systems (EuroSys)", "Seal: Towards Diverse Specification Inference for Linux Interfaces from Security Patches", "https://dl.acm.org/doi/abs/10.1145/3689031.3717487", "Wei Chen, Bowen Zhang, Chengpeng Wang, Wensheng Tang, and Charles Zhang"),
+  P(2024, "Conference on Neural Information Processing Systems (NeurIPS)", "LLMDFA: Analyzing Dataflow in Code with Large Language Models", "publications/LLMDFA_NeurIPS2024.pdf", "Chengpeng Wang, Wuqi Zhang, Zian Su, Xiangzhe Xu, Xiaoheng Xie, and Xiangyu Zhang", "", true),
+  P(2024, "Findings of EMNLP", "Sanitizing Large Language Models in Bug Detection with Data-Flow", "publications/LLMSAN_EMNLP2024.pdf", "Chengpeng Wang, Wuqi Zhang, Zian Su, Xiangzhe Xu, and Xiangyu Zhang"),
+  P(2024, "IEEE Transactions on Software Engineering (TSE)", "PackHunter: Recovering Missing Packages for C/C++ Projects", "https://ieeexplore.ieee.org/document/10770187/", "Rongxin Wu, Zhiling Huang, Zige Tian, Chengpeng Wang, and Xiangyu Zhang"),
+  P(2024, "ASE Poster Track", "RepoGenix: Dual Context-Aided Repository-Level Code Completion with Language Models", "publications/ASE24_poster.pdf", "Ming Liang, Xiaoheng Xie, Gehao Zhang, Xunjin Zheng, Peng Di, Wei Jiang, Hongwei Chen, Chengpeng Wang, and Gang Fan"),
+  P(2024, "IEEE Transactions on Software Engineering (TSE)", "Fast and Precise Static Null Exception Analysis with Synergistic Preprocessing", "https://ieeexplore.ieee.org/document/10689456", "Yi Sun, Chengpeng Wang, Gang Fan, Qingkai Shi, and Xiangyu Zhang"),
+  P(2024, "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)", "SQLess: Dialect-Agnostic SQL Query Simplification", "publications/ISSTA24_SQLess.pdf", "Li Lin, Zongyin Hao, Chengpeng Wang, Zhuangda Wang, Rongxin Wu, and Gang Fan"),
+  P(2024, "ACM International Conference on the Foundations of Software Engineering (FSE)", "DAInfer: Inferring API Aliasing Specifications from Library Documentation via Neurosymbolic Optimization", "publications/FSE24.pdf", "Chengpeng Wang, Jipeng Zhang, Rongxin Wu, and Charles Zhang", "", true),
+  P(2024, "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)", "SIRO: Empowering Version Compatibility in Intermediate Representations via Program Synthesis", "publications/ASPLOS2024_SIRO.pdf", "Bowen Zhang, Wei Chen, Peisen Yao, Chengpeng Wang, Wensheng Tang, and Charles Zhang"),
+  P(2024, "International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)", "GiantSan: Efficient Memory Sanitization with Segment Folding", "publications/ASPLOS2024_GiantSan.pdf", "Hao Ling, Heqing Huang, Chengpeng Wang, Yuandao Cai, and Charles Zhang", "ACM SIGARCH Best Paper Award"),
+  P(2024, "IEEE/ACM International Conference on Software Engineering (ICSE)", "LibAlchemy: A Two-Layer Persistent Summary Design for Taming Third-Party Libraries in Static Bug-Finding Systems", "publications/ICSE24.pdf", "Rongxin Wu, Yuxuan He, Jiafeng Huang, Chengpeng Wang, Wensheng Tang, Qingkai Shi, Xiao Xiao, and Charles Zhang"),
+  P(2023, "ACM Transactions on Software Engineering and Methodology (TOSEM)", "Octopus: Scaling Value-Flow Analysis via Parallel Collection of Realizable Path Conditions", "publications/TOSEM23.pdf", "Wensheng Tang, Dejun Dong, Shijie Li, Chengpeng Wang, Peisen Yao, Jinguo Zhou, and Charles Zhang"),
+  P(2023, "IEEE/ACM International Conference on Automated Software Engineering (ASE)", "DCLink: Bridging Data Constraint Changes and Implementations in FinTech Systems", "publications/ASE2023.pdf", "Wensheng Tang#, Chengpeng Wang#, Peisen Yao, Rongxin Wu, Xianjin Fu, Gang Fan, and Charles Zhang"),
+  P(2023, "European Conference on Object-Oriented Programming (ECOOP)", "Synthesizing Conjunctive Queries for Code Search", "publications/ECOOP2023.pdf", "Chengpeng Wang, Peisen Yao, Wensheng Tang, Gang Fan, and Charles Zhang"),
+  P(2023, "USENIX Annual Technical Conference (ATC)", "Detecting Logical Bugs in Database Management Systems with Approximate Query Synthesis", "publications/ATC2023.pdf", "Zongyin Hao, Quanfeng Huang, Chengpeng Wang, Jianfeng Wang, Yushan Zhang, Rongxin Wu, and Charles Zhang"),
+  P(2023, "IEEE/ACM International Conference on Software Engineering (ICSE)", "Verifying Data Constraint Equivalence in FinTech Systems", "publications/ICSE2023.pdf", "Chengpeng Wang, Gang Fan, Peisen Yao, Fuxiong Pan, and Charles Zhang", "", true),
+  P(2022, "SPLASH Student Research Competition", "CodeSpider: Automatic Code Querying with Multi-modal Conjunctive Query Synthesis", "publications/SPLASH_SRC_2022.pdf", "Chengpeng Wang"),
+  P(2022, "ACM Transactions on Software Engineering and Methodology (TOSEM)", "Anchor: Fast and Precise Value-Flow Analysis for Containers via Memory Orientation", "publications/TOSEM22.pdf", "Chengpeng Wang, Wenyang Wang, Peisen Yao, Qingkai Shi, Jinguo Zhou, Xiao Xiao, and Charles Zhang"),
+  P(2022, "IEEE/ACM International Conference on Automated Software Engineering (ASE)", "Accelerating Build Dependency Error Detection via Virtual Build", "publications/ASE2022.pdf", "Rongxin Wu, Minglei Chen, Chengpeng Wang, Gang Fan, Jiguang Qiu, and Charles Zhang"),
+  P(2022, "ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)", "Complexity-Guided Container Replacement Synthesis", "publications/OOPSLA2022.pdf", "Chengpeng Wang, Peisen Yao, Wensheng Tang, Qingkai Shi, and Charles Zhang", "ACM SIGPLAN Distinguished Paper Award", true),
+  P(2020, "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA)", "Escaping Dependency Hell: Finding Build Dependency Errors with the Unified Dependency Graph", "publications/issta20.pdf", "Gang Fan, Chengpeng Wang, Rongxin Wu, Xiao Xiao, Qingkai Shi, and Charles Zhang"),
+];
+
+const AWARDS = [
+  { year: "2025", title: "ASE Distinguished Reviewer Award, ACM SIGSOFT" },
+  { year: "2025", title: "NeurIPS Spotlight Paper" },
+  { year: "2024", title: "Postdoc Travel Award, Purdue University" },
+  { year: "2024", title: "ACM SIGARCH Best Paper Award, ASPLOS" },
+  { year: "2023", title: "Ant Group Outstanding Collaboration Award" },
+  { year: "2022", title: "UGC Research Travel Grant, HKUST (2022–2023)" },
+  { year: "2022", title: "ACM SIGPLAN Distinguished Paper Award, OOPSLA" },
+];
+
+const TEACHING = [
+  { code: "CS 6215", name: "Advanced Topics in Program Analysis", when: "NUS, Fall 2026" },
+  { code: "CS 510", name: "Software Engineering", when: "Purdue, Fall 2025" },
+  { code: "CS 592", name: "AI and Security", when: "Purdue, Fall 2024" },
+];
+
+const SERVICE = [
+  { label: "Organizing Committee", items: "FSE'27 SRC (co-chair), LMPL'25" },
+  { label: "Program Committee", items: "OOPSLA'27, LMPL'26, PAgE'26, FSE'27, ICSE'27, NeurIPS'26, ARR'26, PLDI'26, ISSTA'26, FSE'26, LLM4Code'26, NeurIPS'25, ASE'25, ISSRE'25, Forge'25, FSE'25, ISSTA'25, SPLASH'24 SRC, ASE'24 (Industrial Track), ISSRE'24, Forge'24" },
+  { label: "Journal Reviewer", items: "TOSEM, TSE, Communications of the ACM" },
+  { label: "Artifact Evaluation", items: "OOPSLA'24, PLDI'23, FSE'22, ISSTA'22" },
+  { label: "Volunteer", items: "SPLASH 2022, ISSTA 2019" },
+];
+
+const TEAM = [
+  { name: "Zhiwei Lin", role: "Ph.D. student, 2026.08 –", url: "https://profile.snakin.top/" },
+  { name: "Nguyen Viet Anh", role: "Research assistant, 2026.08 –", url: "https://vietanh1010.github.io/" },
+  { name: "Zeyue Jia", role: "Master student, 2026.07 –", url: "https://erchiusx.github.io/" },
+  { name: "Yipeng Zhang", role: "Master student, 2026.08 –", url: "https://sg.linkedin.com/in/yipeng-zhang-931464340" },
+  { name: "Chua Chong Sun", role: "Undergraduate (FYP), 2026.08 –", url: "https://sg.linkedin.com/in/chua-chong-sun-aa553028a" },
+];
+
+function decorate(p, label) {
+  const i = p.authors.indexOf("Chengpeng Wang");
+  return Object.assign({}, p, {
+    label: label,
+    pre: i < 0 ? p.authors + ". " : p.authors.slice(0, i),
+    post: i < 0 ? "" : p.authors.slice(i + "Chengpeng Wang".length) + ".",
+    venueFull: /20\d\d/.test(p.venue) ? p.venue : p.venue + ", " + p.year,
+  });
+}
+
+class Component extends DCLogic {
+  renderVals() {
+    const selected = PUBS.filter((p) => p.selected).slice(0, this.props.selectedPublicationCount ?? 8);
+    const pubs = selected.map((p, i) => decorate(p, "[" + (i + 1) + "]"));
+
+    return {
+      pubs,
+      newsShown: NEWS,
+      newsMaxHeight: (this.props.newsBoxHeight ?? 340) + "px",
+      team: TEAM,
+      awards: AWARDS,
+      teaching: TEACHING,
+      service: SERVICE,
+    };
+  }
+}
+
+</script>
+</body>
+</html>
