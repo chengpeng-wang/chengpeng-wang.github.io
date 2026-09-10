@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications | Chengpeng Wang</title>
+<link rel="stylesheet" href="./site.css">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..700;1,400..600&display=swap" rel="stylesheet" />
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: #FFFFFF; }
+  a { color: #003D7C; text-decoration: none; }
+  a:hover { color: #001F42; text-decoration: underline; }
+</style>
+</helmet>
+<div class="site-shell" style="background:#FFFFFF;color:#000000;font-family:'Source Sans 3','Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:17px;line-height:1.62;min-height:100vh">
+
+  <div style="position:sticky;top:0;z-index:50">
+  <div style="background:#003D7C;color:#FFFFFF">
+    <div class="site-brandbar" style="max-width:1120px;margin:0 auto;padding:0 34px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <div class="site-brand-left" style="display:flex;align-items:center;gap:16px;min-width:0">
+        <a class="nus-wordmark" href="https://www.nus.edu.sg/" target="_blank" style="font-size:37px;font-weight:700;letter-spacing:0.02em;color:#FFFFFF;line-height:1" style-hover="color:#EF7C00;text-decoration:none">NUS</a>
+        <span class="nus-divider" style="width:2px;height:38px;background:#EF7C00"></span>
+        <a class="nus-school" href="https://www.comp.nus.edu.sg/" target="_blank" style="font-size:21px;line-height:1.25;color:#DCE5F0" style-hover="color:#FFFFFF;text-decoration:none">National University of Singapore<br />School of Computing</a>
+      </div>
+      <a class="rise-link" href="lab.html" style="font-size:21px;font-weight:600;color:#FFFFFF;border-bottom:2px solid #EF7C00;padding-bottom:2px;white-space:nowrap" style-hover="color:#EF7C00;text-decoration:none">RISE Lab</a>
+    </div>
+  </div>
+  <div style="height:4px;background:#EF7C00"></div>
+  <div style="background:rgba(255,255,255,0.96);backdrop-filter:blur(6px);box-shadow:0 1px 4px rgba(0,0,0,0.08)">
+    <div class="site-nav" style="max-width:1120px;margin:0 auto;padding:0 34px;display:flex;gap:26px;flex-wrap:wrap;align-items:center;height:46px;font-size:17px">
+      <a href="index.html#about">About</a>
+      <a href="index.html#news">News</a>
+      <a href="index.html#students">Students</a>
+      <a href="publication.html" style="color:#000000;font-weight:600">Publications</a>
+      <a href="index.html#awards">Awards</a>
+      <a href="index.html#teaching">Teaching</a>
+      <a href="index.html#service">Service</a>
+      <a href="index.html#misc">Misc</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="site-main" style="max-width:1120px;margin:0 auto;padding:52px 34px 96px">
+    <h1 style="font-size:42px;font-weight:600;letter-spacing:-0.02em;line-height:1.1;margin:0 0 12px;color:#003D7C">Publications</h1>
+    <p style="margin:0 0 10px;font-size:17px;color:#000000;text-wrap:pretty">See also <a href="https://scholar.google.com/citations?hl=EN&user=z_Z5jn4AAAAJ" target="_blank">Google Scholar</a> and <a href="https://dblp.org/pid/240/2235-1.html" target="_blank">DBLP</a>. <span style="color:#000000">#</span> denotes equal contribution.</p>
+    <p style="margin:0 0 34px;font-size:17px;color:#000000;line-height:1.55;text-wrap:pretty"><span style="font-weight:600;color:#000000">Copyright notice.</span> The documents referenced below are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+
+    <sc-for list="{{ groups }}" as="g" hint-placeholder-count="5">
+      <div style="margin-bottom:34px">
+        <div style="font-size:24px;font-weight:600;color:#003D7C;margin-bottom:14px">{{ g.year }}</div>
+        <sc-for list="{{ g.items }}" as="pub" hint-placeholder-count="6">
+          <div style="margin-bottom:16px">
+            <div style="font-size:17px;line-height:1.58">
+              <div style="font-weight:600;text-wrap:pretty"><a href="{{ pub.url }}" target="_blank">{{ pub.title }}</a></div>
+              <div style="color:#000000;text-wrap:pretty">{{ pub.pre }}<span>Chengpeng Wang</span>{{ pub.post }}</div>
+              <div style="color:#000000;text-wrap:pretty"><em>{{ pub.venue }}</em></div>
+              <sc-if value="{{ pub.plainNote }}"><div style="color:#000000;text-wrap:pretty">{{ pub.plainNote }}</div></sc-if>
+              <sc-if value="{{ pub.award }}"><div style="color:#C0392B;font-weight:600;text-wrap:pretty">&#127942; {{ pub.award }}</div></sc-if>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="background:#003D7C;color:#DCE5F0">
+    <div style="height:4px;background:#EF7C00"></div>
+    <div class="site-footer-inner" style="max-width:1120px;margin:0 auto;padding:26px 34px;text-align:center;font-size:15.5px">Last updated 2026.08</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const P = (year, venue, title, url, authors, note) => ({ year, venue, title, url, authors, note });
+
+const PUBS = [
+  P(2026, "arXiv preprint, July 2026", "SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills", "https://arxiv.org/abs/2607.09016", "Xuan Chen, Chengpeng Wang, Lu Yan, and Xiangyu Zhang"),
+  P(2026, "Foundations and Trends in Programming Languages (FnTPL), 2026", "Neurosymbolic Code Auditing", "publications/neurosym_auditing.pdf", "Chengpeng Wang, Zhuo Zhang, Xiangzhe Xu, Mingwei Zheng, Guannan Wei, and Xiangyu Zhang"),
+  P(2026, "Conference on Language Modeling (COLM), Oct 2026", "BugScope: Learn to Find Bugs Like Human", "https://arxiv.org/abs/2507.15671", "Jinyao Guo, Chengpeng Wang, Dominic Deluca, Jinjie Liu, Zhuo Zhang, and Xiangyu Zhang"),
+  P(2026, "Findings of Empirical Methods in Natural Language Processing (Findings of EMNLP), Oct 2026", "Benchmarking Explainable Vulnerability Detection with Calling Contexts", "publication.html", "Jinyao Guo, Yaoyang Ye, Zhihao Guo, Mingwei Zheng, Tiantai Zhang, Xuwei Liu, Xiaolong Jin, Congyu Liu, Xiangzhe Xu, Zian Su, Ziyun Song, Zhou Xuan, Xiao Cheng, Chengpeng Wang, and Xiangyu Zhang"),
+  P(2026, "Findings of the Association for Computational Linguistics (ACL Findings), July 2026", "Raw Pointer Rewriting with LLMs for Translating C to Safer Rust", "https://arxiv.org/abs/2505.04852", "Yifei Gao, Chengpeng Wang, Pengxiang Huang, Xuwei Liu, Mingwei Zheng, and Xiangyu Zhang"),
+  P(2026, "Findings of the Association for Computational Linguistics (ACL Findings), July 2026", "HintPilot: LLM-based Compiler Hint Synthesis for Code Optimization", "https://openreview.net/pdf?id=CvhC1jFF3H", "Hanyun Jiang, Peisen Yao, Kaiyue Li, Tingting Lin, Chengpeng Wang, and Kui Ren"),
+  P(2026, "ACM International Conference on the Foundations of Software Engineering (FSE), July 2026", "NESA: Relational Neuro-Symbolic Static Program Analysis", "https://arxiv.org/abs/2412.14399", "Chengpeng Wang, Yifei Gao, Wuqi Zhang, Xuwei Liu, Jinyao Guo, Mingwei Zheng, Qingkai Shi, and Xiangyu Zhang"),
+  P(2026, "ACM International Conference on the Foundations of Software Engineering (FSE Industry Track), July 2026", "RepoFuse: A Dual-Context Approach to Repository-Level Code Completion at Industrial Scale", "publication.html", "Ming Liang, Xiaoheng Xie, Gehao Zhang, Xunjin Zheng, Wei Jiang, Chengpeng Wang, Gang Fan, and Peng Di"),
+
+  P(2025, "International Conference on Automated Software Engineering (ASE), Nov 2025", "RFCAudit: AI Agent for Auditing Protocol Implementations Against RFC Specifications", "https://arxiv.org/pdf/2506.00714", "Mingwei Zheng, Chengpeng Wang, Xuwei Liu, Jinyao Guo, Shiwei Feng, and Xiangyu Zhang"),
+  P(2025, "Annual Conference on Neural Information Processing Systems (NeurIPS Spotlight), Dec 2025", "CoRe: Benchmarking LLMs' Code Reasoning Capabilities through Static Analysis Tasks", "https://arxiv.org/abs/2507.05269", "Danning Xie, Mingwei Zheng, Xuwei Liu, Jiannan Wang, Chengpeng Wang, Lin Tan, and Xiangyu Zhang"),
+  P(2025, "ACM Transactions on Software Engineering and Methodology (TOSEM), Sep 2025", "ReachCheck: Compositional Library-Aware Call Graph Reachability Analysis in the IDEs", "publications/TOSEM2025.pdf", "Chao Wang, Li Lin, Chengpeng Wang, Jiafeng Huang, Congxia Wu, and Rongxin Wu"),
+  P(2025, "ACM Transactions on Computer Systems (TOCS), May 2025", "GiantSan: Efficient Operation-Level Memory Sanitization with Segment Folding", "publications/tocs2025.pdf", "Hao Ling, Heqing Huang, Chengpeng Wang, Yuandao Cai, and Charles Zhang", "Invited extended version of the ASPLOS'24 paper"),
+  P(2025, "International Conference on Machine Learning (ICML), July 2025", "RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing", "https://arxiv.org/pdf/2501.18160", "Jinyao Guo#, Chengpeng Wang#, Xiangzhe Xu, Zian Su, and Xiangyu Zhang"),
+  P(2025, "ACM International Conference on the Foundations of Software Engineering (FSE), June 2025", "Understanding Industry Perspectives of Static Application Security Testing Evaluation", "publications/FSE2025.pdf", "Yuan Li, Peisen Yao, Kan Yu, Chengpeng Wang, Yaoyang Ye, Song Li, Meng Luo, Yepang Liu, and Kui Ren"),
+  P(2025, "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), June 2025", "Validating Network Protocol Parsers with Traceable RFC Document Interpretation", "publications/ISSTA25.pdf", "Mingwei Zheng, Danning Xie, Qingkai Shi, Chengpeng Wang, and Xiangyu Zhang"),
+  P(2025, "European Conference on Computer Systems (EuroSys), 2025", "Seal: Towards Diverse Specification Inference for Linux Interfaces from Security Patches", "https://dl.acm.org/doi/abs/10.1145/3689031.3717487", "Wei Chen, Bowen Zhang, Chengpeng Wang, Wensheng Tang, and Charles Zhang"),
+
+  P(2024, "Annual Conference on Neural Information Processing Systems (NeurIPS), Dec 2024", "LLMDFA: Analyzing Dataflow in Code with Large Language Models", "publications/LLMDFA_NeurIPS2024.pdf", "Chengpeng Wang, Wuqi Zhang, Zian Su, Xiangzhe Xu, Xiaoheng Xie, and Xiangyu Zhang"),
+  P(2024, "Findings of Empirical Methods in Natural Language Processing (Findings of EMNLP), Nov 2024", "Sanitizing Large Language Models in Bug Detection with Data-Flow", "publications/LLMSAN_EMNLP2024.pdf", "Chengpeng Wang, Wuqi Zhang, Zian Su, Xiangzhe Xu, and Xiangyu Zhang"),
+  P(2024, "IEEE Transactions on Software Engineering (TSE), Nov 2024", "PackHunter: Recovering Missing Packages for C/C++ Projects", "https://ieeexplore.ieee.org/document/10770187/", "Rongxin Wu, Zhiling Huang, Zige Tian, Chengpeng Wang, and Xiangyu Zhang"),
+  P(2024, "IEEE/ACM International Conference on Automated Software Engineering (ASE Poster), Oct 2024", "RepoGenix: Dual Context-Aided Repository-Level Code Completion with Language Models", "publications/ASE24_poster.pdf", "Ming Liang, Xiaoheng Xie, Gehao Zhang, Xunjin Zheng, Peng Di, Wei Jiang, Hongwei Chen, Chengpeng Wang, and Gang Fan"),
+  P(2024, "IEEE Transactions on Software Engineering (TSE), Sept 2024", "Fast and Precise Static Null Exception Analysis with Synergistic Preprocessing", "https://ieeexplore.ieee.org/document/10689456", "Yi Sun, Chengpeng Wang, Gang Fan, Qingkai Shi, and Xiangyu Zhang"),
+  P(2024, "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), Sept 2024", "SQLess: Dialect-Agnostic SQL Query Simplification", "publications/ISSTA24_SQLess.pdf", "Li Lin, Zongyin Hao, Chengpeng Wang, Zhuangda Wang, Rongxin Wu, and Gang Fan"),
+  P(2024, "ACM International Conference on the Foundations of Software Engineering (FSE), July 2024", "DAInfer: Inferring API Aliasing Specifications from Library Documentation via Neurosymbolic Optimization", "publications/FSE24.pdf", "Chengpeng Wang, Jipeng Zhang, Rongxin Wu, and Charles Zhang"),
+  P(2024, "ACM Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), April 2024", "SIRO: Empowering Version Compatibility in Intermediate Representations via Program Synthesis", "publications/ASPLOS2024_SIRO.pdf", "Bowen Zhang, Wei Chen, Peisen Yao, Chengpeng Wang, Wensheng Tang, and Charles Zhang"),
+  P(2024, "ACM Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), April 2024", "GiantSan: Efficient Memory Sanitization with Segment Folding", "publications/ASPLOS2024_GiantSan.pdf", "Hao Ling, Heqing Huang, Chengpeng Wang, Yuandao Cai, and Charles Zhang", "Best Paper Award"),
+  P(2024, "IEEE/ACM International Conference on Software Engineering (ICSE), April 2024", "LibAlchemy: A Two-Layer Persistent Summary Design for Taming Third-Party Libraries in Static Bug-Finding Systems", "publications/ICSE24.pdf", "Rongxin Wu, Yuxuan He, Jiafeng Huang, Chengpeng Wang, Wensheng Tang, Qingkai Shi, Xiao Xiao, and Charles Zhang"),
+
+  P(2023, "ACM Transactions on Software Engineering and Methodology (TOSEM), Oct 2023", "Octopus: Scaling Value-Flow Analysis via Parallel Collection of Realizable Path Conditions", "publications/TOSEM23.pdf", "Wensheng Tang, Dejun Dong, Shijie Li, Chengpeng Wang, Peisen Yao, Jinguo Zhou, and Charles Zhang"),
+  P(2023, "IEEE/ACM International Conference on Automated Software Engineering (ASE), Sept 2023", "DCLink: Bridging Data Constraint Changes and Implementations in FinTech Systems", "publications/ASE2023.pdf", "Wensheng Tang#, Chengpeng Wang#, Peisen Yao, Rongxin Wu, Xianjin Fu, Gang Fan, and Charles Zhang"),
+  P(2023, "European Conference on Object-Oriented Programming (ECOOP), July 2023", "Synthesizing Conjunctive Queries for Code Search", "publications/ECOOP2023.pdf", "Chengpeng Wang, Peisen Yao, Wensheng Tang, Gang Fan, and Charles Zhang"),
+  P(2023, "USENIX Annual Technical Conference (ATC), July 2023", "Detecting Logical Bugs in Database Management Systems with Approximate Query Synthesis", "publications/ATC2023.pdf", "Zongyin Hao, Quanfeng Huang, Chengpeng Wang, Jianfeng Wang, Yushan Zhang, Rongxin Wu, and Charles Zhang"),
+  P(2023, "IEEE/ACM International Conference on Software Engineering (ICSE), May 2023", "Verifying Data Constraint Equivalence in FinTech Systems", "publications/ICSE2023.pdf", "Chengpeng Wang, Gang Fan, Peisen Yao, Fuxiong Pan, and Charles Zhang"),
+
+  P(2022, "ACM SIGPLAN Conference on Systems, Programming, Languages, and Applications: Software for Humanity, Student Research Competition (SPLASH SRC), Dec 2022", "CodeSpider: Automatic Code Querying with Multi-modal Conjunctive Query Synthesis", "publications/SPLASH_SRC_2022.pdf", "Chengpeng Wang"),
+  P(2022, "ACM Transactions on Software Engineering and Methodology (TOSEM), Sept 2022", "Anchor: Fast and Precise Value-Flow Analysis for Containers via Memory Orientation", "publications/TOSEM22.pdf", "Chengpeng Wang, Wenyang Wang, Peisen Yao, Qingkai Shi, Jinguo Zhou, Xiao Xiao, and Charles Zhang"),
+  P(2022, "IEEE/ACM International Conference on Automated Software Engineering (ASE), Oct 2022", "Accelerating Build Dependency Error Detection via Virtual Build", "publications/ASE2022.pdf", "Rongxin Wu, Minglei Chen, Chengpeng Wang, Gang Fan, Jiguang Qiu, and Charles Zhang"),
+  P(2022, "ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA), Nov 2022", "Complexity-Guided Container Replacement Synthesis", "publications/OOPSLA2022.pdf", "Chengpeng Wang, Peisen Yao, Wensheng Tang, Qingkai Shi, and Charles Zhang", "ACM SIGPLAN Distinguished Paper Award"),
+
+  P(2020, "ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), July 2020", "Escaping Dependency Hell: Finding Build Dependency Errors with the Unified Dependency Graph", "publications/issta20.pdf", "Gang Fan, Chengpeng Wang, Rongxin Wu, Xiao Xiao, Qingkai Shi, and Charles Zhang"),
+];
+
+function decorate(p, num) {
+  const i = p.authors.indexOf("Chengpeng Wang");
+  const isAward = !!p.note && /award|spotlight|distinguished/i.test(p.note);
+  return Object.assign({}, p, {
+    num: num,
+    award: isAward ? p.note : "",
+    plainNote: isAward ? "" : p.note,
+    pre: i < 0 ? p.authors + ". " : p.authors.slice(0, i),
+    post: i < 0 ? "" : p.authors.slice(i + "Chengpeng Wang".length) + ".",
+  });
+}
+
+class Component extends DCLogic {
+  renderVals() {
+    const years = [];
+    PUBS.forEach((p) => { if (years.indexOf(p.year) < 0) years.push(p.year); });
+    let n = PUBS.length;
+    const groups = years.map((y) => ({
+      year: String(y),
+      items: PUBS.filter((p) => p.year === y).map((p) => decorate(p, n--)),
+    }));
+    return { groups };
+  }
+}
+
+</script>
+</body>
+</html>
