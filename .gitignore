@@ -1,0 +1,5 @@
+# Private CV and all of its build artifacts.
+/CV/private/
+
+# macOS folder metadata.
+.DS_Store
